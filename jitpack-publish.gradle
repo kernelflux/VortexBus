@@ -1,0 +1,31 @@
+// jitpack-publish.gradle
+apply plugin: 'maven-publish'
+
+def isAndroidLibrary = plugins.hasPlugin('com.android.library')
+
+if (!project.hasProperty('POM_ARTIFACT_ID')) {
+    ext.POM_ARTIFACT_ID = project.name.toLowerCase()
+}
+if (!project.hasProperty('POM_GROUP_ID')) {
+    ext.POM_GROUP_ID = "com.github.${System.getenv("GITHUB_USER") ?: "<your_github_username>"}"
+}
+if (!project.hasProperty('POM_VERSION')) {
+    ext.POM_VERSION = project.version
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                if (project.plugins.hasPlugin('com.android.library')) {
+                    from components.release
+                } else {
+                    from components.java
+                }
+                groupId = POM_GROUP_ID
+                artifactId = POM_ARTIFACT_ID
+                version = POM_VERSION
+            }
+        }
+    }
+}
