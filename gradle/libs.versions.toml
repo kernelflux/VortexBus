@@ -26,7 +26,7 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 
-vortexbus = { module = "com.github.kernelflux:vortexbus", version.ref = "vortexbus" }
+vortexbus = { module = "com.github.kernelflux:VortexBus", version.ref = "vortexbus" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
