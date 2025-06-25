@@ -1,16 +1,17 @@
 [versions]
 agp = "8.11.0"
-kotlin = "2.0.21"
-coreKtx = "1.10.1"
+kotlin = "2.2.0"
+coreKtx = "1.16.0"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-appcompat = "1.6.1"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.1"
 kotlinxCoroutinesCore = "1.10.2"
 lifecycleRuntimeKtx = "2.9.1"
-material = "1.10.0"
-activity = "1.8.0"
-constraintlayout = "2.1.4"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+
+vortexbus = "0.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -21,9 +22,11 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesCore" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+
+vortexbus = { module = "com.github.kernelflux:vortexbus", version.ref = "vortexbus" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
