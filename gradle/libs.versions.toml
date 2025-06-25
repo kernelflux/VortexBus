@@ -11,7 +11,7 @@ lifecycleRuntimeKtx = "2.9.1"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
 
-vortexbus = "0.0.1"
+vortexbus = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,7 +26,7 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 
-vortexbus = { module = "com.github.kernelflux:VortexBus", version.ref = "vortexbus" }
+vortexbus = { module = "com.github.kernelflux:vortexbus", version.ref = "vortexbus" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
