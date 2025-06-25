@@ -46,6 +46,6 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     
     debugImplementation(project(":vortexbus"))
-    releaseImplementation(libs.vortexbus)
+   //releaseImplementation(libs.vortexbus)
 
 }
